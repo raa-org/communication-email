@@ -1,0 +1,47 @@
+{
+  "name": "@rightandabove/communication-email-nest",
+  "version": "1.0.1",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "scripts": {
+    "prepublishOnly": "npm run build",
+    "build": "tsc -p tsconfig.json",
+    "test": "vitest run"
+  },
+  "dependencies": {
+    "@nestjs-modules/mailer": "^2.3.6",
+    "nodemailer": "^8.0.5",
+    "@rightandabove/communication-email-core": "1.0.1",
+    "lodash": "^4.17.21"
+  },
+  "peerDependencies": {
+    "@nestjs/common": "^11.1.13",
+    "@nestjs/core": "^11.1.13",
+    "@nestjs/cqrs": "^11.0.3",
+    "rxjs": "7.8.2"
+  },
+  "devDependencies": {
+    "@nestjs/testing": "^11.1.13",
+    "@rightandabove/communication-email-core": "file:../core",
+    "@types/node": "^20.0.0",
+    "typescript": "^5.7.0",
+    "vitest": "^2.1.0"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "files": [
+    "dist",
+    "README.md"
+  ],
+  "author": {
+    "name": "Right&Above, LLC",
+    "url": "https://rightandabove.com"
+  },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/raa-org/communication-email.git",
+    "directory": "nest"
+  }
+}

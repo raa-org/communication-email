@@ -1,0 +1,26 @@
+{
+  "name": "communication-email",
+  "description": "Transactional email for NestJS hosts (SMTP via nodemailer), with a headless React surface.",
+  "private": true,
+  "author": {
+    "name": "Right&Above, LLC",
+    "url": "https://rightandabove.com"
+  },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/raa-org/communication-email.git"
+  },
+  "workspaces": [
+    "core",
+    "nest",
+    "react"
+  ],
+  "scripts": {
+    "build": "npm run build --workspaces",
+    "test": "npm run test --workspaces --if-present"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}

@@ -1,0 +1,39 @@
+{
+  "name": "@rightandabove/communication-email-react",
+  "version": "1.0.1",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "scripts": {
+    "prepublishOnly": "npm run build",
+    "build": "tsc -p tsconfig.json"
+  },
+  "dependencies": {
+    "@rightandabove/communication-email-core": "1.0.1"
+  },
+  "peerDependencies": {
+    "react": "^18.3.1 || ^19.0.0"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "files": [
+    "dist",
+    "README.md"
+  ],
+  "author": {
+    "name": "Right&Above, LLC",
+    "url": "https://rightandabove.com"
+  },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/raa-org/communication-email.git",
+    "directory": "react"
+  },
+  "devDependencies": {
+    "@rightandabove/communication-email-core": "file:../core",
+    "@types/react": "^18.3.31",
+    "react": "^18.3.1",
+    "typescript": "^5.7.0"
+  }
+}
