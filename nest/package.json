@@ -1,6 +1,6 @@
 {
   "name": "@rightandabove/communication-email-nest",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "main": "./dist/index.js",
   "types": "./dist/index.d.ts",
   "scripts": {
@@ -11,7 +11,7 @@
   "dependencies": {
     "@nestjs-modules/mailer": "^2.3.6",
     "nodemailer": "^8.0.5",
-    "@rightandabove/communication-email-core": "1.0.1",
+    "@rightandabove/communication-email-core": "1.0.2",
     "lodash": "^4.17.21"
   },
   "peerDependencies": {
